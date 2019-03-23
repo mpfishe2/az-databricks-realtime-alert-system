@@ -5,9 +5,20 @@ import json
 import time
 from azure.servicebus import ServiceBusService
 
+NAMESPACE_NAME = "<event-hub-namespace-name>"
+KEY_NAME = "RootManageShareAccessKey"
+KEY_VALUE = "<primary-key-value>"
+
+if NAMESPACE_NAME == "<event-hub-namespace-name>" or NAMESPACE_NAME == "":
+    NAMESPACE_NAME = input("What is the name of your Event Hub Namespace?:")
+
+if KEY_VALUE == "<event-hub-namespace-name>" or KEY_VALUE == "":
+    KEY_VALUE = input("What is the primary key of your Event Hub Namespace:")
+
+
 # service_namespace = Azure Event Hub Namespace name
 # shared_access_key_value = Access Key, found in Azure Portal for Azure Event Hub Namespace
-sbs = ServiceBusService(service_namespace='', shared_access_key_name='', shared_access_key_value='')
+sbs = ServiceBusService(service_namespace=NAMESPACE_NAME, shared_access_key_name=KEY_NAME, shared_access_key_value=KEY_VALUE)
 # -------------------------------------------------------
 # This is the global variables to create some sample data
 # --------------------------------------------------------
