@@ -21,7 +21,7 @@ The end result is a pipleine that filters out anomalous data in a real-time stre
 
 ## How to use this repository
 
-There is a thorough walkthrough and explanation of how to set up this solution that can be found in this link.
+There is a thorough walkthrough and explanation of how to set up this solution that can be found in this link: https://codeminustears.com/2019/03/23/real-time-alerting-databricks/
   
 ### General Steps
 
