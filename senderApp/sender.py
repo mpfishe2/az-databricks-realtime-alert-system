@@ -6,7 +6,7 @@ import time
 from azure.servicebus import ServiceBusService
 
 NAMESPACE_NAME = "<event-hub-namespace-name>"
-KEY_NAME = "RootManageShareAccessKey"
+KEY_NAME = "RootManageSharedAccessKey"
 KEY_VALUE = "<primary-key-value>"
 
 if NAMESPACE_NAME == "<event-hub-namespace-name>" or NAMESPACE_NAME == "":
